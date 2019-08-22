@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var list = document.getElementById("name_list")
+            list.addEventListener("click",function (ev) {
+                var ev = ev || window.event
+                var target = ev.target || ev.srcElement;
+                
+                if(target.nodeName.toLowerCase() === 'li'){
+                    console.log(target.innerText);
+                }
+            },false)
+            list.addEventListener("click",function (ev) {
+                var ev = ev || window.event
+                var target = ev.target || ev.srcElement;
+                
+                var oLi = document.getElementsByTagName("li")
+                for(var i=0;i<oLi.length;i++) {
+                    if(oLi[i].contains(target)) {
+                        console.log(i)
+                    }
+                }
+            })
+        }
+        
+    </script>
+</head>
+<body>
+<ul id="name_list">
+    <li>张三</li>
+    <li>李四</li>
+    <li>王五</li>
+    <li>赵六</li>
+    <li>杨七</li>
+</ul>
+
+</body>
+</html>

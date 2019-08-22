@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+
+
+}
+#div1{
+    display: none;
+    background-color: #00000080;
+    position: absolute;
+    /*top: 0;*/
+    z-index: 99;
+}
+#div2{
+    margin: 50px auto;
+    background-color: tomato;
+    width: 150px;
+    height: 100px;
+}
+#word{
+    text-align: center;
+}
+#yes{
+    margin-left: 30px;
+    cursor: pointer;
+    /*text-align: center;*/
+}
+#no{
+    margin-right: 30px;
+    cursor: pointer;
+    /*text-align: center;*/
+}
